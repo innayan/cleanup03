@@ -21,10 +21,5 @@ object Project : Project({
             applyPerEachBranch = true
             preserveArtifactsDependencies = true
         }
-        keepRule {
-            disabled = true
-            id = "KEEP_RULE_5"
-            keepAtLeast = allBuilds()
-        }
     }
 })
