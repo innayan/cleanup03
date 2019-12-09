@@ -12,16 +12,6 @@ object Project : Project({
 
     cleanup {
         keepRule {
-            id = "KEEP_RULE_10"
-            keepAtLeast = allBuilds()
-            applyToBuilds {
-                withTags = anyOf("b1", "overriden")
-            }
-            dataToKeep = everything()
-            applyPerEachBranch = true
-            preserveArtifactsDependencies = true
-        }
-        keepRule {
             disabled = true
             id = "KEEP_RULE_11"
             keepAtLeast = allBuilds()
