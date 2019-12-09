@@ -56,6 +56,16 @@ object Project : Project({
             applyPerEachBranch = true
             preserveArtifactsDependencies = true
         }
+        keepRule {
+            id = "KEEP_RULE_9"
+            keepAtLeast = allBuilds()
+            applyToBuilds {
+                withTags = anyOf("new,new")
+            }
+            dataToKeep = statisticsOnly()
+            applyPerEachBranch = true
+            preserveArtifactsDependencies = true
+        }
         baseRule {
             all(builds = 123)
             history(builds = 123)
