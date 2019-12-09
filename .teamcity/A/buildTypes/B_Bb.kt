@@ -15,6 +15,7 @@ object B_Bb : BuildType({
             }
             dataToKeep = historyAndStatistics {
                 preserveArtifacts = all()
+                preserveLogs = true
             }
             applyPerEachBranch = true
             preserveArtifactsDependencies = true
