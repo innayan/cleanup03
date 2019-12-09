@@ -41,6 +41,7 @@ object Project : Project({
             }
             dataToKeep = historyAndStatistics {
                 preserveArtifacts = all()
+                preserveLogs = true
             }
             applyPerEachBranch = true
             preserveArtifactsDependencies = true
