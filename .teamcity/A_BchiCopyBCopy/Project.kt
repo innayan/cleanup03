@@ -26,5 +26,12 @@ object Project : Project({
             applyPerEachBranch = true
             preserveArtifactsDependencies = true
         }
+        keepRule {
+            id = "KEEP_RULE_8"
+            keepAtLeast = allBuilds()
+            dataToKeep = statisticsOnly()
+            applyPerEachBranch = true
+            preserveArtifactsDependencies = true
+        }
     }
 })
